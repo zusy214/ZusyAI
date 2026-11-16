@@ -1,0 +1,25 @@
+@ZusyAI.Api_HostAddress = http://localhost:5030
+
+GET {{ZusyAI.Api_HostAddress}}/api/models/local
+Accept: application/json
+
+###
+
+GET {{ZusyAI.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
+
+POST {{ZusyAI.Api_HostAddress}}/api/chat
+Content-Type: application/json
+
+{
+  "messages": [
+    {
+      "role": "User",
+      "content": "Hello! Introduce yourself briefly."
+    }
+  ],
+  "provider": "Local",
+  "think": false
+}

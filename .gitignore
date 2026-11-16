@@ -1,0 +1,32 @@
+# Node and Electron outputs
+frontend/node_modules/
+frontend/dist/
+frontend/dist-ssr/
+frontend/release/
+frontend/*.local
+/frontend/cls
+/frontend/concurrently
+/frontend/frontend@0.0.0
+/frontend/npm
+/frontend/Sending
+
+# .NET build outputs
+**/bin/
+**/obj/
+.vs/
+*.user
+*.suo
+
+# Local data and model weights
+/data/
+/models/
+
+# Local credentials
+**/.env
+**/.env.*
+!**/.env.example
+**/secrets.json
+**/secrets.*.json
+
+# Logs
+**/*.log
